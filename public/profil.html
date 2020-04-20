@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Mon petit programme</title>
+	  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+	$.get("sidebar.html", function(data){
+			$("#sidenav").replaceWith(data);
+	});
+	$.get("topbar.html", function(data){
+		$("#topbar").replaceWith(data);
+	});	
+
+	</script>
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> -->
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+<!-- SIDE BAR  -->
+   <div id="sidenav"></div>
+ <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+<!-- Main Content -->
+      <div id="content">
+ <!-- TOP BAR  -->
+   <div id="topbar"></div>
+<!-- Begin Page Content -->
+        <div class="container-fluid">
+<!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Mon Profil</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generer un Report</a>
+          </div>
+		  
+<!-- CONTENT		   -->
+		  
+	<div class="container" id="ct" >
+    <div class="row my-2">   
+        <div class="col-lg-8 order-lg-2">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Mon Profil</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Informations</a>
+                </li>
+				<li class="nav-item">
+                    <a href="" data-target="#permissions" data-toggle="tab" class="nav-link">Permissions</a>
+                </li>
+            </ul>
+            <div class="tab-content py-4">
+                <div class="tab-pane active" id="profile">
+                    <h5 class="mb-3">Profil d'utilisateur</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+							<h6>A propos</h6><form role="form" id="myform">
+							<textarea id="about" style="width:200px;height:200px" >
+							
+							</textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Recent badges</h6>
+                            <a href="#" class="badge badge-dark badge-pill">html5</a>
+                            <a href="#" class="badge badge-dark badge-pill">react</a>
+                            <a href="#" class="badge badge-dark badge-pill">codeply</a>
+                            <a href="#" class="badge badge-dark badge-pill">angularjs</a>
+                            <a href="#" class="badge badge-dark badge-pill">css3</a>
+                            <a href="#" class="badge badge-dark badge-pill">jquery</a>
+                            <a href="#" class="badge badge-dark badge-pill">bootstrap</a>
+                            <a href="#" class="badge badge-dark badge-pill">responsive-design</a>
+                            <hr>
+                            <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
+                            <span class="badge badge-success"><i class="fa fa-cog"></i> 43 Forks</span>
+                            <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Activité récente</h5>
+                            <table class="table table-sm table-hover table-striped">
+                                <tbody>                                    
+                                    <tr>
+                                        <td>
+                                            <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <div class="tab-pane" id="messages">
+                    <div class="alert alert-info alert-dismissable">
+                        <a class="panel-close close" data-dismiss="alert">×</a> This is an <strong>.alert</strong>. Use this to show important messages to the user.
+                    </div>
+                    <table class="table table-hover table-striped">
+                        <tbody>                                    
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">3 hrs ago</span> Here is your a link to the latest summary report from the..
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">Yesterday</span> There has been a request on your account since that was..
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">9/10</span> Porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">9/4</span> Vestibulum tincidunt ullamcorper eros eget luctus. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">9/4</span> Maxamillion ais the fix for tibulum tincidunt ullamcorper eros. 
+                                </td>
+                            </tr>
+                        </tbody> 
+                    </table>
+                </div>
+                <div class="tab-pane" id="edit">
+                 
+						<h5 class="mb-3">Informations</h5>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Prénom</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="prenom" name="prenom">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Nom</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="nom" name="nom">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Companie</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="companie" name="companie">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Website</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="website" name="website">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Addresse</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="adresse" name="adresse">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" id="ville" name="ville">
+                            </div>
+                            <div class="col-lg-3">
+                                <input class="form-control" type="text" id="dpt" name="dpt">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group row"> -->
+                            <!-- <label class="col-lg-3 col-form-label form-control-label">Time Zone</label> -->
+                            <!-- <div class="col-lg-9"> -->
+                                <!-- <select id="user_time_zone" class="form-control" size="0"> -->
+                                    <!-- <option value="Hawaii">(GMT-10:00) Hawaii</option> -->
+                                    <!-- <option value="Alaska">(GMT-09:00) Alaska</option> -->
+                                    <!-- <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option> -->
+                                    <!-- <option value="Arizona">(GMT-07:00) Arizona</option> -->
+                                    <!-- <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option> -->
+                                    <!-- <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option> -->
+                                    <!-- <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option> -->
+                                    <!-- <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option> -->
+                                <!-- </select> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Pseudo</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" id="pseudo" name="pseudo">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group row"> -->
+                            <!-- <label class="col-lg-3 col-form-label form-control-label">Mot de passe</label> -->
+                            <!-- <div class="col-lg-9"> -->
+                                <!-- <input class="form-control" type="text" id="pseudo" name="password"> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="form-group row"> -->
+                            <!-- <label class="col-lg-3 col-form-label form-control-label">Confirmer le mot de passe</label> -->
+                            <!-- <div class="col-lg-9"> -->
+                                <!-- <input class="form-control" type="text" id="pseudo" name="password2"> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                              
+                            </div>
+                        </div>
+                   
+                </div>
+				
+				<div class="tab-pane" id="permissions">
+				<h5 class="mb-3">Mes permissions</h5>
+				
+					
+						 <div class="form-group">
+						 <label for="pet-select">Choisir un profil:</label>
+						<select t class="form-control" name="profil" id="profil" disabled>
+							<option value="">--Choisir--</option>
+							<option value="user">Utilisateur</option>
+							<option value="responsable" selected>Reponsable</option>
+							<option value="viewer">Visionneur</option>
+
+						</select>
+						</div>
+				</div>
+				
+				
+				 </form>
+            </div>
+        </div>
+        <div class="col-lg-4 order-lg-1 text-center">
+            <img src="//placehold.it/150" class="mx-auto img-fluid img-circle d-block" alt="avatar" id="avatar">
+            
+			<h6 class="mt-2">Télécharger une autre photo</h6>
+            
+			
+			
+			
+			<label class="custom-file">
+                <input type="file" id="file-upload" class="custom-file-input">
+                <span class="custom-file-control">Choisir un fichier</span>
+            </label>
+			
+			
+			
+			  <form id="form" enctype="multipart/form-data">
+				  <!-- <input type='file' onchange="readURL(this);" /> -->
+				</form>
+				<!-- <img id="preview" src="#" alt="your image" /> -->
+		  
+		  
+		 
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+		<div  class="float-right">	
+		<input type="reset" class="btn btn-secondary" value="Annuler">
+        <input onclick='updateUser()' type="button" class="btn btn-primary" value="Sauver">
+		</div>
+	
+	</div>
+      <!-- Footer -->
+      <!-- <footer class="sticky-footer bg-white"> -->
+        <!-- <div class="container my-auto"> -->
+          <!-- <div class="copyright text-center my-auto"> -->
+            <!-- <span>Copyright &copy; Your Website 2019</span> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </footer> -->
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" onclick="logout()" >Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+	<script src="js/profil.js"></script>
+	
+
+</body>
+
+</html>
+

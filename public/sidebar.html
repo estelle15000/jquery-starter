@@ -1,0 +1,84 @@
+   <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Applications <sup>H</sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+		
+	<li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-home"></i>
+          <span>Accueil</span></a>
+      </li>
+		  <!-- Nav Item - Charts -->
+      <li class="nav-item ">
+        <a class="nav-link" href="new.html">
+          <i class="fas fa-fw fa-users"></i>
+          <span>Nouveau</span></a>
+      </li>
+	  
+	  <li class="nav-item ">
+        <a class="nav-link" href="users.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Utilisateurs</span></a>
+      </li>
+
+		   <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block"></hr>
+	  
+	  
+	  
+		 <li class="nav-item ">
+			<a class="nav-link" href="login.html"> <i class="fas fa-sign-in-alt"></i> <span>Identification</span></a>
+			<a class="nav-link" href="register.html"><i class="fas fa-registered"></i><span>Enregistrement</span></a>
+				
+				
+		 </li>
+		 
+		 
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+	
+	<script>
+	
+$( document ).ready(function() {
+					
+		<!-- var url = window.location.href; -->
+		<!-- console.log(url); -->
+			 
+		<!-- var pre = localStorage.getItem("server_link"); -->
+		<!-- console.log(pre); -->
+		
+		<!-- url = url.replace(pre, ''); -->
+		<!-- url = url.substr(1); -->
+		
+		<!-- console.log(url); -->
+
+
+			// remove active class from all
+		<!-- $("#accordionSidebar  .nav-item").removeClass('active'); -->
+
+		// add active class to div that matches active url
+		$('a[href="'+ location.pathname.substring(1) +'"]').parents('li,ul').addClass('active');
+});
+
+			
+			  
+
+   
+	</script>

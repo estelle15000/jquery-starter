@@ -1,0 +1,4 @@
+
+function logout(){
+	alert('bye');	
+}
