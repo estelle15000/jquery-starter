@@ -11,7 +11,7 @@
   
 				$.ajax({
 				type: "GET",
-				url: localStorage.getItem("server_link")+"/getActualSession",
+				url: "/getActualSession",
 				headers: { 
 						 'Content-Type': 'application/json',
 						Accept: 'application/json'
@@ -74,7 +74,7 @@ function getUserMessages(id){
 	var data = {"_id":id};
 	$.ajax({
 		type: "POST",
-		url: localStorage.getItem("server_link")+"/getUserMessages",
+		url: "/getUserMessages",
 		data : JSON.stringify(data),
 		headers: { 
 				 'Content-Type': 'application/json',

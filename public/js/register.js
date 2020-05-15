@@ -13,7 +13,7 @@ function record(){
 	
 	$.ajax({
 		type: "POST",
-		url: localStorage.getItem("server_link")+"/insertUser",
+		url: "/insertUser",
 		headers: { 
 				 'Content-Type': 'application/json',
 				Accept: 'application/json'
@@ -23,7 +23,7 @@ function record(){
 		contentType: 'application/json',
 		success: function(data) {
 			 alert('Utilisateur enregistré');
-			 window.location.replace(localStorage.getItem("server_link")+"/index.html");
+			 window.location.replace("/index.html");
 			 
 		}
 	});

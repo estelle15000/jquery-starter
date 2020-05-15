@@ -15,7 +15,7 @@ function updateUser(){
 		
 		$.ajax({
 			type: "POST",
-			url: localStorage.getItem("server_link")+"/updateUser",
+			url: "/updateUser",
 			headers: { 
 					 'Content-Type': 'application/json',
 					Accept: 'application/json'
@@ -63,7 +63,7 @@ function readURL(input) {
 				
                 //ajax post here
                  $.ajax({
-                     url: localStorage.getItem("server_link")+'/images',
+                     url: '/images',
                      data: fd,
 					 headers: {'Content-Type': undefined },
 					type: 'POST',

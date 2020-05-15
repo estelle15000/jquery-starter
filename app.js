@@ -819,9 +819,14 @@ app.post('/getUserMessages', function(req, res, next) {
 
 
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+
+
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
+
+// app.listen(3000, function () {
+//   console.log('Example app listening on port 3000!');
+// });
 
 
 // app.listen(80, function() {

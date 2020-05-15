@@ -11,7 +11,7 @@ function login(){
 	
 	$.ajax({
 		type: "POST",
-		url: localStorage.getItem("server_link")+"/getAuth",
+		url: "/getAuth",
 		headers: { 
 				 'Content-Type': 'application/json',
 				Accept: 'application/json'
@@ -21,7 +21,7 @@ function login(){
 		success: function(data) {
 			 // alert(data);
 			 console.log(data);
-			  window.location.replace(localStorage.getItem("server_link")+"/index.html");	 
+			  window.location.replace("/index.html");	 
 		}
 	});
 	
