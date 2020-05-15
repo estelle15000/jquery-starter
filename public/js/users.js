@@ -21,48 +21,28 @@ function getUsers() {
 					obj.img = "img/defaut.png"
 				}
 
-				$("#users").append(`
-							
-							
-							
-							
-							
-							<div class="card" style="width:400px">
-							  <img class="card-img-top" src="${obj.img}" alt="Card image">
-							  <div class="card-body">
-								<h4 class="card-title">${obj.nom.toUpperCase()}</h4>
-								<p class="card-text">Description ...</p>
-								
-								
-								<button type="button" onclick ="feedPopup('${
-									obj._id
-								}','${obj.nom.toUpperCase()}')" class=" btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
-									  Message
-									</button>
-																	
-								
-								
-								
-								
-								
-							  </div>
+				$("#users").append(
+					`
+						<div class="card" style="width:400px">
+							<img class="card-img-top" src="${obj.img}" alt="Card image">
+							<div class="card-body">
+							<h4 class="card-title">${obj.nom.toUpperCase()}</h4>
+							<p class="card-text">Description ...</p>
+							<button type="button" onclick ="feedPopup('${
+								obj._id
+							}','${obj.nom.toUpperCase()}')" class=" btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal">
+									Message
+								</button>
 							</div>
-							
-							
-							
-							
-							
-							
-							
-							
-						
-						`)
+						</div>
+				`
+			)
 			})
 		},
 	})
 }
 
-getUsers()
+getUsers();
 
 $(document).on("click", ".open-AddBookDialog", function () {})
 
